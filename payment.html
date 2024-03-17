@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment Form</title>
+    <style>
+        .head{
+            background-color: rgba(206, 219, 23, 0.949);
+            text-align: center;
+        }
+        .full{
+            background-color:   aqua ;
+            text-align: justify;
+        }
+        .req{
+            color: red;
+            text-align: center;
+        }
+        .btn{
+            background-color: black;
+        }
+        .sub{
+            color: white;
+            text-decoration: none;
+        }
+        .btn :hover{
+            background-color: white;
+        }
+        .sub :hover{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <form action="" class="full">
+        <h1 class="head">Payment Form</h1>
+        
+        <h2>Contact Information</h2>
+        <P>Name : <input type="text" name="name" required></P>
+        <fieldset>
+            <legend>Gender </legend>
+        <p>
+            male <input type="radio" name="gender" id="male">
+            female <input type="radio" name="gender" id="femel">
+        </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="100" rows="8"></textarea></p>
+        <p>Email : <input type="email" name="email" id="email" required></p>
+        <p>Pincode : <input type="pincode" name="pincode" id="pincode" required></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <P>card Type :
+            <Select  name="card_type" id="card_type">
+                <option value="">--Select A Card Type--</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Master Card">Master Card</option>
+            </Select>
+        </P>
+        <p>
+            Card Number <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Exparation date  <input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <P>
+            CVV <input type="password" name="CVV" id="cvv" required>
+        </P>
+        <button class="btn"><a href="payment.html" class="sub">Submit</a></button>
+    </form>
+</body>
+</html>
